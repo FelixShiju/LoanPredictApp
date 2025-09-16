@@ -7,7 +7,7 @@ import pickle
 import streamlit as st
 
 # ================= LOAD MODEL ==================
-loan_model = pickle.load(open('loan_model.sav", "rb"))
+loan_model = pickle.load(open("loan_model.sav", "rb"))
 
 # ================= STREAMLIT UI =================
 st.set_page_config(page_title="Loan Prediction System", page_icon="💰", layout="centered")
@@ -56,5 +56,6 @@ if st.button("🔍 Predict Loan Approval"):
         st.success("✅ Loan is **Approved**!")
     else:
         st.error("❌ Loan is **Not Approved**.")
+
 
 
